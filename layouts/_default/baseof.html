@@ -7,14 +7,28 @@
     {{ with (templates.Defer (dict "key" "global")) }} {{ partial "css.html" .
     }} {{ end }}
   </head>
-  <body class="min-h-screen px-4 py-8 sm:p-12 flex flex-col bg-background text-foreground">
-    <header class="max-w-3xl mx-auto w-full flex flex-col sm:flex-row sm:justify-between gap-4 mb-8 sm:mb-12">
+  <body
+    class="min-h-screen px-4 py-8 sm:p-12 flex flex-col bg-background text-foreground"
+  >
+    <header
+      class="max-w-3xl mx-auto w-full flex flex-col sm:flex-row sm:justify-between gap-4 mb-8 sm:mb-12"
+    >
       <h1 class="text-2xl font-semibold">
-        <a href="/" class="text-foreground hover:text-primary no-underline">{{ .Site.Title }}</a>
+        <a href="/" class="text-foreground hover:text-primary no-underline"
+          >{{ .Site.Title }}</a
+        >
       </h1>
       <span class="flex gap-4">
-        <a href="https://github.com/ChaseRensberger" class="text-primary hover:text-accent hover:underline">github</a>
-        <a href="https://linkedin.com/in/ChaseRensberger" class="text-primary hover:text-accent hover:underline">linkedin</a>
+        <a
+          href="https://github.com/ChaseRensberger"
+          class="text-primary hover:text-accent hover:underline"
+          >github</a
+        >
+        <a
+          href="https://linkedin.com/in/ChaseRensberger"
+          class="text-primary hover:text-accent hover:underline"
+          >linkedin</a
+        >
       </span>
     </header>
     <main>{{ block "main" . }}{{ end }}</main>

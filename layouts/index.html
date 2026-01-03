@@ -1,21 +1,31 @@
 {{ define "main" }}
 <div class="max-w-3xl mx-auto">
-  <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">stuff i wrote</h2>
-  <div class="space-y-6 sm:space-y-8">
-    {{ range where .Site.RegularPages "Type" "posts" }}
-    <article class="border-l-4 border-primary pl-4 sm:pl-6 py-2">
-      <h3 class="text-lg sm:text-xl font-semibold mb-2">
-        <a
-          href="{{ .Permalink }}"
-          class="text-foreground hover:text-primary no-underline hover:underline"
-          >{{ .Title }}</a
-        >
-      </h3>
-      <time class="text-sm opacity-70"
-        >{{ .Date.Format "January 2, 2006" }}</time
-      >
-    </article>
-    {{ end }}
-  </div>
+  <section class="space-y-2">
+    <h2 class="text-2xl font-semibold">about</h2>
+    <p>
+      i am a software engineer from the east coast of the united states. this
+      site is hosted on a raspberry pi in my home office and took
+      <span id="loadTime" class="text-green-600 font-medium"></span
+      ><span class="text-green-600 font-medium"> milliseconds</span>
+      to reach you.
+    </p>
+  </section>
+  <section>
+    <h2 class="text-2xl font-bold mb-6 sm:mb-8">stuff i wrote</h2>
+    <div class="space-y-6 sm:space-y-8">
+      {{ range where .Site.RegularPages "Type" "posts" }}
+      <article>
+        <h3>
+          <a
+            href="{{ .Permalink }}"
+            class="text-lg text-foreground hover:text-primary underline"
+            >{{ .Title }}</a
+          >
+          <time class="opacity-70">{{ .Date.Format "2006-01-02" }}</time>
+        </h3>
+      </article>
+      {{ end }}
+    </div>
+  </section>
 </div>
 {{ end }}

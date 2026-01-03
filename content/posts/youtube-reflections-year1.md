@@ -1,7 +1,8 @@
----
-title: "Relfections on 1 Year of Trying to Become Successful on YouTube"
-date: 2025-01-10
----
++++
+title = "Relfections on 1 Year of Trying to Become Successful on YouTube"
+date = 2025-01-10
+draft = false
++++
 
 In 2024, my friend and I [started making YouTube videos](https://youtube.com/lukejtv). This article is just some housekeeping I’m doing to keep track of progress for this channel. I hope that some people find it valuable. I offer some advice in this article, but everything should be taken with a grain of salt, as we are not (hopefully yet) a successful channel. If you’re interested in getting in touch, there is contact information at the end of the article.
 

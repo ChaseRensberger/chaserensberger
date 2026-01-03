@@ -2,20 +2,7 @@
 <div class="max-w-3xl mx-auto">
   <section>
     <h2 class="text-xl mb-6 sm:mb-8">{{ .Title }}</h2>
-    <ol class="space-y-4">
-      {{ range where .Pages "Params.hidden" "!=" true }}
-      <li>
-        <h3>
-          <time class="opacity-70">{{ .Date.Format "2006-01-02" }}</time>
-          <a
-            href="{{ .Permalink }}"
-            class="text-lg text-foreground hover:text-primary underline"
-            >{{ .Title }}</a
-          >
-        </h3>
-      </li>
-      {{ end }}
-    </ol>
+    {{ partial "post-list.html" . }}
   </section>
 </div>
 {{ end }}

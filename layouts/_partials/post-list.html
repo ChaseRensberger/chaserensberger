@@ -1,0 +1,14 @@
+<ol class="space-y-4">
+  {{ range where .Pages "Params.hidden" "!=" true }}
+  <li>
+    <h3 class="space-x-2">
+      <time class="opacity-70">{{ .Date.Format "2006-01-02" }}</time>
+      <a
+        href="{{ .Permalink }}"
+        class="text-lg text-foreground hover:text-primary underline"
+        >{{ .Title }}</a
+      >
+    </h3>
+  </li>
+  {{ end }}
+</ol>

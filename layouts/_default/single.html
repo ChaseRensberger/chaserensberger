@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="max-w-3xl mx-auto mt-4 sm:mt-12">
+  <header class="mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ .Title }}</h1>
+    <time class="text-sm opacity-70">{{ .Date.Format "January 2, 2006" }}</time>
+  </header>
+  <div class="prose prose-base sm:prose-lg max-w-none">{{ .Content }}</div>
+</article>
+{{ end }}

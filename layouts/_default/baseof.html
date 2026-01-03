@@ -17,6 +17,7 @@
           >{{ .Site.Title }}</a
         >
       </h1>
+      {{ if not .IsPage }}
       <span class="flex gap-4">
         <a
           href="https://github.com/ChaseRensberger"
@@ -29,6 +30,7 @@
           >linkedin</a
         >
       </span>
+      {{ end }}
     </header>
     <main>{{ block "main" . }}{{ end }}</main>
   </body>

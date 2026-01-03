@@ -2,7 +2,7 @@
 <div class="max-w-3xl mx-auto">
   <h1 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">{{ .Title }}</h1>
   <div class="space-y-6 sm:space-y-8">
-    {{ range .Pages }}
+    {{ range where .Pages "Params.hidden" "!=" true }}
     <article class="border-l-4 border-primary pl-4 sm:pl-6 py-2">
       <h2 class="text-lg sm:text-xl font-semibold mb-2">
         <a href="{{ .Permalink }}" class="text-foreground hover:text-primary no-underline hover:underline">{{ .Title }}</a>

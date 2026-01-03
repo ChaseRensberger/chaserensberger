@@ -17,3 +17,6 @@ title = 'chase rensberger'
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'

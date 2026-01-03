@@ -75,7 +75,7 @@ This is our most successful video to date. In many respects, we’re often just 
 
 We felt like this video really hit all three. I chose one of the cheapest flights I could find, Luke and I almost always enjoy traveling (especially for a video), and it performed significantly better than any other video we’ve made thus far. We felt like we took a concept that had been done before and improved on it; I don’t believe anyone has actually been flown somewhere blindfolded for a GeoGuessr YouTube video (sorry to the lady scanning our boarding passes—she was definitely very confused by Luke’s situation).
 
-![Luke in an airport](https://chaserensberger.com/assets/luke-blind.png)
+![Luke in an airport](/images/luke-blind.png)
 
 The video was also relatively quick to make—filming only took a single day, and we got to explore Providence, Rhode Island, which neither of us had visited before.
 
@@ -83,7 +83,7 @@ The video was also relatively quick to make—filming only took a single day, an
 
 We wanted to make a Halloween video and thought Airbnb videos were still pretty trendy. Neither of us believes in ghosts, but we thought it would be fun to open our minds for a bit and create a lighthearted ghost-themed video. We were partially inspired by a [similar video](https://www.youtube.com/watch?v=zCoMjByGJZw&t=333s) that we really liked, but we wanted to put our own spin on it. A fun part of this project was that I got to experiment with electronics and build a battery-powered temperature, infrared, and electromagnetic field sensor.
 
-![C.H.A.S.E.](https://chaserensberger.com/assets/c.h.a.s.e.png)
+![C.H.A.S.E.](/images/c.h.a.s.e.png)
 
 Overall, we were disappointed with the performance of this video. Looking back, it’s unclear exactly what went wrong, but we suspect the video may have been restricted due to some unfavorable policy around the semantics of our title and content combination. I discuss our discoveries about restricted videos in a later section.
 
@@ -108,7 +108,7 @@ Ignoring how poorly our most recent video performed, I’d like to think we’re
 
 We break down the production process into a few stages.
 
-![LukeJ Video Creation Process](https://chaserensberger.com/assets/lukej-content-cycle.png)
+![LukeJ Video Creation Process](/images/lukej-content-cycle.png)
 
 Hopefully, the graphic provides a relatively adequate explanation for each step. We are both very involved with every stage, except **Post-Production**, where I lock Luke in a cave and tell him he can’t come out until the video is fully edited (this is actually what he’s doing right now while I write this article).
 

@@ -1,13 +1,19 @@
 {{ define "main" }}
 <div class="max-w-3xl mx-auto">
-  <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Posts</h2>
+  <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">stuff i wrote</h2>
   <div class="space-y-6 sm:space-y-8">
     {{ range where .Site.RegularPages "Type" "posts" }}
     <article class="border-l-4 border-primary pl-4 sm:pl-6 py-2">
       <h3 class="text-lg sm:text-xl font-semibold mb-2">
-        <a href="{{ .Permalink }}" class="text-foreground hover:text-primary no-underline hover:underline">{{ .Title }}</a>
+        <a
+          href="{{ .Permalink }}"
+          class="text-foreground hover:text-primary no-underline hover:underline"
+          >{{ .Title }}</a
+        >
       </h3>
-      <time class="text-sm opacity-70">{{ .Date.Format "January 2, 2006" }}</time>
+      <time class="text-sm opacity-70"
+        >{{ .Date.Format "January 2, 2006" }}</time
+      >
     </article>
     {{ end }}
   </div>

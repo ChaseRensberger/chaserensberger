@@ -1,6 +1,8 @@
+{{ $posts := where .Pages "Params.hidden" "!=" true }}
+{{ if $posts }}
 <h2 class="text-xl">stuff i wrote with my computer</h2>
 <ol class="space-y-4">
-  {{ range where .Pages "Params.hidden" "!=" true }}
+  {{ range $posts }}
   <li>
     <time class="text-foreground/70">{{ .Date.Format "2006-01-02" }}</time>
     <a href="{{ .Permalink }}" class="hover:text-primary underline"
@@ -9,3 +11,4 @@
   </li>
   {{ end }}
 </ol>
+{{ end }}

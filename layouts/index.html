@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="max-w-3xl mx-auto">
+  <section>
+    <h2 class="text-xl mb-6 sm:mb-8">stuff i wrote</h2>
+    {{ partial "post-list.html" (dict "Pages" (where (where .Site.RegularPages
+    "Type" "posts") "Params.hidden" "!=" true)) }}
+  </section>
+</div>
+{{ end }}

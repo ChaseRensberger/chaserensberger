@@ -1,7 +1,10 @@
 {{ define "main" }}
-<div class="max-w-3xl mx-auto">
-  <section>
-    <h2 class="text-xl mb-6 sm:mb-8">stuff i wrote</h2>
+<div class="max-w-3xl mx-auto space-y-4">
+  <section class="space-y-4">
+    <h2 class="text-xl">about</h2>
+    <p>i own a computer.</p>
+  </section>
+  <section class="space-y-4">
     {{ partial "post-list.html" (dict "Pages" (where (where .Site.RegularPages
     "Type" "posts") "Params.hidden" "!=" true)) }}
   </section>
